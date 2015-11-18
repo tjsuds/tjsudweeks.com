@@ -1,0 +1,445 @@
+/* index */
+
+/*responsive/compatible boilerplate from Jayden Seric @ http://jaydenseric.com/blog/forget-normalize-or-resets-lay-your-own-css-foundation*/
+html {
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+body {
+    margin: 0;
+    font: 16px/1 sans-serif;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+}
+h1, h2, h3, h4, p, blockquote, figure, ol, ul {
+    margin: 0;
+    padding: 0;
+}
+main,
+li {
+    display: block;
+}
+h1, h2, h3, h4 {
+    font-size: inherit;
+}
+strong {
+    font-weight: bold;
+}
+a, button {
+    color: inherit;
+    transition: .3s;
+}
+a {
+    text-decoration: none;
+}
+button {
+    overflow: visible;
+    border: 0;
+    font: inherit;
+    -webkit-font-smoothing: inherit;
+    letter-spacing: inherit;
+    background: none;
+    cursor: pointer;
+}
+::-moz-focus-inner {
+    padding: 0;
+    border: 0;
+}
+:focus {
+    outline: 0;
+}
+img {
+    max-width: 100%;
+    height: auto;
+    border: 0;
+}
+body, h1 , h2, h3, h4, p, div, header, footer, section, ul, ol, li, a {
+	/*my additions to the boilerplate*/
+	font: inherit;
+	list-style: none;
+	color: rgba(60,63,66,1);
+}
+/*---------------------------------------------------------------------------------*/
+.site {
+	font-size: 62.5%; /* 1em = 10px */
+	width: 90%; /* 1200px */
+	margin: 2.5% auto; /*30px*/
+}
+
+header {
+	padding: 2% 0 0 0; /* 30px */
+	position: relative;
+}
+
+.index {
+	font: 100 3em 'roboto', helvetica, serif;
+}
+
+hr {
+	margin: .25% auto; /*3px*/
+	border-style: solid;
+	color: rgba(60,63,66,.3);
+	clear: right;
+}
+
+.main {
+	padding: 3% 0;
+
+}
+
+.creating, .reading, .listening, .working, .learning, .playing {
+	padding: 0.75% 0.75%;
+	text-align: center;
+	margin: 0 auto;
+}
+
+.creating a, .reading a, .listening a, .working a, .learning a, .playing a {
+	font: 4em 'lato', 'helvetica neue', serif;
+	color: rgba(60,63,66,.3);
+	text-transform: uppercase;
+	letter-spacing: .075em;
+}
+
+footer {
+	font: 100 3em 'roboto', helvetica, serif;
+	padding: 0 0 2% 0; /* 30px */
+	text-align: right;
+	clear: both;
+}
+
+/*------------------------------------------------------------------------------------*/
+/*Pages Template*/
+												/*Header / Nav*/
+header ul.rowOne {
+	display: inline;
+	position: absolute;
+	bottom: 0;
+	right: 282px;
+}
+header ul.rowTwo {
+	display: inline;
+	position: absolute;
+	bottom: 0;
+	right: 0;
+}
+
+.rowOne li, .rowTwo li {
+	display: inline;
+	padding-left: 5px;
+}
+
+.rowOne a, .rowTwo a {
+	font: 100 2.5em 'roboto', helvetica, serif;
+}
+
+.home {
+	display: inline;
+	font: 100 3em 'roboto', helvetica, serif;
+}
+/*current link colors -----------change colors eventually!*/
+#current-c, #current-r, #current-li, #current-w, #current-le, #current-p {
+	color: rgba(248,112,96,1);
+}
+
+/*----------------------------------READING CONTENT----------------------------------*/
+.intro-r {
+	font: 100 3em 'lato', helvetica, serif;
+	text-transform: uppercase;
+	text-align: center;
+	color: rgba(248,112,96,1);
+	padding-bottom: 2%;
+	letter-spacing: .125em;
+}
+
+.btn-box {
+	width: 100%;
+	text-align: center;
+}
+
+
+.btn-1, .btn-2, .btn-back, .btn-rave {
+  background: rgba(255,255,255,.1);
+  background-image: -webkit-linear-gradient(top, rgba(255,255,255,.1), rgba(255,255,255,.1));
+  background-image: -moz-linear-gradient(top, rgba(255,255,255,.1), rgba(255,255,255,.1));
+  background-image: -ms-linear-gradient(top, rgba(255,255,255,.1), rgba(255,255,255,.1));
+  background-image: -o-linear-gradient(top, rgba(255,255,255,.1), rgba(255,255,255,.1));
+  background-image: linear-gradient(to bottom, rgba(255,255,255,.1), rgba(255,255,255,.1));
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0px;
+  font: 300 2em 'lato', helvetica, serif;
+  color: rgba(248,112,96,1);
+  padding: 10px 10px;
+  border: solid rgba(248,112,96,1) 4px;
+  text-decoration: none;
+  text-transform: uppercase;
+  text-align: center;
+  transition: all .3s;
+  margin: 1%;
+  display: inline-block;
+  width: 225px;
+}
+
+.btn-1:hover, .btn-2:hover, .btn-back:hover, .btn-rave:hover {
+  background: rgba(248,112,96,1);
+  text-decoration: none;
+  color: rgba(255,255,255,1);
+}
+.btn-1:active, .btn-2:active, .btn-back:active, .btn-rave:active {
+  background: rgba(248,112,96,1);
+  text-decoration: none;
+  color: rgba(255,255,255,1);
+  transform: scale(1.1);
+}
+
+/*----------------------------Book List------------------------------*/
+
+ul.booklist {
+	float: left;
+	width: 100%;
+	margin: 3% auto;
+	text-align: center;
+}
+.booklist li {
+	display: inline;
+}
+.booklist img {
+	width: 20%;
+	margin: 3%;
+}
+
+.book {
+	-webkit-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+    -o-transition: all .5s ease;
+    -ms-transition: all .5s ease;
+    transition: all .5s ease;
+}
+.book:hover {
+	-webkit-filter: grayscale(100%);
+	opacity: .5;
+}
+
+/*----------------------------Book Pages------------------------------*/
+.banner {
+	text-align: center;
+	display: block;
+	position: relative;
+}
+.banner img {
+	width: 100%;
+	margin: -2% auto 3% auto;
+}
+
+.my-review-pic img, .amazon img {
+	display: inline-block;
+	float: left;
+	width: 15%;
+	margin: 0 3% 1% 0;
+}
+
+.my-review-pic, .amazon {
+	display: inline-block;
+	font: 100 1.8em 'roboto', helvetica, serif;
+	width: 100%;
+	margin-bottom: 3%;
+}
+.my-review-pic p, .amazon p {
+	margin-bottom: 1%;
+	text-align: justify;
+}
+
+.amazon {
+	margin-bottom: 0%;
+}
+.amazon img {
+	-webkit-filter: grayscale(100%);
+	-webkit-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+    -o-transition: all .5s ease;
+    -ms-transition: all .5s ease;
+    transition: all .5s ease;
+}
+.amazon img:hover {
+	-webkit-filter: grayscale(0%);
+}
+.amazon img:active {
+	transform: scale(1.1);
+}
+
+
+/*----------------------------------LISTENING CONTENT----------------------------------*/
+
+.rave {
+	padding: 2%;
+	background-color: rgba(218,214,214,.3);
+	overflow: hidden;
+	text-align: center;
+}
+
+.rave-title {
+	font: 100 2.5em 'lato', helvetica, serif;
+	text-transform: uppercase;
+	text-align: center;
+	color: rgba(148,169,187,1);
+	padding-bottom: 2%;
+	letter-spacing: .125em;
+}
+
+
+.rave img {
+	display: inline-block;
+	float: left;
+	width: 20%;
+	margin: 0 3% 3% 0;
+}
+
+.rave p {
+	font: 100 1.8em 'roboto', helvetica, serif;
+	width: 100%;
+	margin-bottom: 1%;
+	text-align: justify;
+}
+
+.p-rave {
+	clear: left;
+	display: block;
+	width: 100%;
+}
+
+.btn-rave {
+	float: right;
+	font: 300 1.5em 'lato', helvetica, serif;
+  	color: rgba(148,169,187,1);
+  	padding: 10px 10px;
+  	border: solid rgba(148,169,187,1) 4px;
+  	margin: 0;
+  	display: block;
+  	width: 200px;
+}
+
+.btn-rave:hover {
+  	background: rgba(148,169,187,1);
+ 	color: rgba(255,255,255,1);
+}
+.btn-rave:active {
+  	background: rgba(148,169,187,1);
+  	color: rgba(255,255,255,1);
+}
+
+
+
+/*
+
+
+									!!!!!!!!!!!@MEDIA QUERIES!!!!!!!!!
+
+
+*/
+
+@media screen and (max-width: 915px) {
+												/*Header/Nav*/
+	header{
+		height: 65px;
+		margin-bottom: 1.5%;
+	}
+
+												/*Book List*/
+	.booklist img {
+		width: 25%;
+	}
+	.my-review-pic img, .amazon img {
+		width: 20%;
+	}
+	.my-review-pic p, .amazon p, .rave p {
+	margin-bottom: 2%;
+	}
+													/*Listening - Current Rave*/
+	.rave img {
+		width: 30%;
+	}
+}	
+	
+
+@media screen and (max-width: 645px) {
+												/*Header/Nav*/
+	header {
+		height: 50px;
+	}
+	header ul.rowOne {
+		display: block;
+		position: absolute;
+		bottom: 25px;
+		right: 0;
+	}
+	header ul.rowTwo {
+		display: block;
+		position: absolute;
+		bottom: 0;
+		right: 10px;
+	}
+	.rowOne li, .rowTwo li {
+	padding-left: 15px;
+	}
+	.rowOne a, .rowTwo a {
+		font: 100 2em 'roboto', helvetica, serif;
+		transition: .1s;
+	}
+												/*Book List*/
+	.booklist img {
+		width: 35%;
+	}
+	.my-review-pic img, .amazon img {
+		width: 25%;
+	}
+	.my-review-pic p, .amazon p, .rave p {
+	margin-bottom: 3%;
+	}
+												/*Listening - Current Rave*/
+	.rave img {
+		width: 40%;
+	}
+}
+
+
+
+@media screen and (max-width: 550px) {
+											/*Header / Nav*/
+	header {
+		height: auto;
+	}
+	header ul.rowOne {
+		width: 100%;
+		position: static;
+		text-align: center;
+	}
+	header ul.rowTwo {
+		width: 100%;
+		position: static;
+		text-align: center;
+	}
+	.rowOne a, .rowTwo a {
+		text-align: center;
+	}
+											/*Book List*/
+	.booklist img {
+		width: 40%;
+	}
+	.my-review-pic img, .amazon img {
+		width: 30%;
+	}
+	.my-review-pic p, .amazon p, .rave p {
+	margin-bottom: 4%;
+	}
+													/*Listening - Current Rave*/
+	.rave img {
+		float: none;
+		width: 80%;
+	}
+
+	.btn-rave {
+		float: none;
+		text-align: center;
+	}
+}
