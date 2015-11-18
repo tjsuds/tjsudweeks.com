@@ -60,31 +60,36 @@ body, h1 , h2, h3, h4, p, div, header, footer, section, ul, ol, li, a {
 	list-style: none;
 	color: rgba(60,63,66,1);
 }
+p {
+  margin-bottom: 1%;
+  text-align: justify;
+}
 /*---------------------------------------------------------------------------------*/
 .site {
 	font-size: 62.5%; /* 1em = 10px */
-	width: 90%; /* 1200px */
+	width: 100%;
 	margin: 2.5% auto; /*30px*/
 }
 
 header {
 	padding: 2% 0 0 0; /* 30px */
 	position: relative;
+  width: 90%;
+  margin: .25% auto;
 }
 
-.index {
+.index-head {
 	font: 100 3em 'roboto', helvetica, serif;
 }
 
 hr {
-	margin: .25% auto; /*3px*/
+	margin: 0 auto;
 	border-style: solid;
 	color: rgba(60,63,66,.3);
-	clear: right;
+	clear: both;
 }
 
 .main {
-	padding: 3% 0;
 
 }
 
@@ -106,7 +111,10 @@ footer {
 	padding: 0 0 2% 0; /* 30px */
 	text-align: right;
 	clear: both;
+  width: 90%;
+  margin: .25% auto;
 }
+
 
 /*------------------------------------------------------------------------------------*/
 /*Pages Template*/
@@ -138,8 +146,11 @@ header ul.rowTwo {
 	font: 100 3em 'roboto', helvetica, serif;
 }
 /*current link colors -----------change colors eventually!*/
-#current-c, #current-r, #current-li, #current-w, #current-le, #current-p {
+#current-c, #current-r, #current-w, #current-le, #current-p {
 	color: rgba(248,112,96,1);
+}
+#current-li {
+  color: rgba(148,169,187,1);
 }
 
 /*----------------------------------READING CONTENT----------------------------------*/
@@ -148,13 +159,14 @@ header ul.rowTwo {
 	text-transform: uppercase;
 	text-align: center;
 	color: rgba(248,112,96,1);
-	padding-bottom: 2%;
+	padding: 2.5% 0;
 	letter-spacing: .125em;
 }
 
 .btn-box {
 	width: 100%;
 	text-align: center;
+  margin: 2% auto;
 }
 
 
@@ -229,7 +241,6 @@ ul.booklist {
 }
 .banner img {
 	width: 100%;
-	margin: -2% auto 3% auto;
 }
 
 .my-review-pic img, .amazon img {
@@ -243,13 +254,11 @@ ul.booklist {
 	display: inline-block;
 	font: 100 1.8em 'roboto', helvetica, serif;
 	width: 100%;
-	margin-bottom: 3%;
+
 }
 .my-review-pic p, .amazon p {
-	margin-bottom: 1%;
-	text-align: justify;
+  padding: 0 2.5%;
 }
-
 .amazon {
 	margin-bottom: 0%;
 }
@@ -273,7 +282,7 @@ ul.booklist {
 
 .rave {
 	padding: 2%;
-	background-color: rgba(218,214,214,.3);
+	background-color: rgba(6,8,7,1);
 	overflow: hidden;
 	text-align: center;
 }
@@ -282,8 +291,8 @@ ul.booklist {
 	font: 100 2.5em 'lato', helvetica, serif;
 	text-transform: uppercase;
 	text-align: center;
-	color: rgba(148,169,187,1);
-	padding-bottom: 2%;
+	color: rgba(168,178,57,1);
+	padding: 0.5% 0 2.5% 0;
 	letter-spacing: .125em;
 }
 
@@ -297,34 +306,40 @@ ul.booklist {
 
 .rave p {
 	font: 100 1.8em 'roboto', helvetica, serif;
+  color: rgba(168,178,57,1);
 	width: 100%;
-	margin-bottom: 1%;
-	text-align: justify;
 }
-
+.rave-m-icons {
+  clear: both;
+}
 .p-rave {
-	clear: left;
-	display: block;
 	width: 100%;
+  padding: 2% 0 0 0;
 }
 
 .btn-rave {
+  background: rgba(6,8,7,1);
+  background-image: -webkit-linear-gradient(top, rgba(6,8,7,1), rgba(6,8,7,1));
+  background-image: -moz-linear-gradient(top, rgba(6,8,7,1), rgba(6,8,7,1));
+  background-image: -ms-linear-gradient(top, rgba(6,8,7,1), rgba(6,8,7,1));
+  background-image: -o-linear-gradient(top, rgba(6,8,7,1), rgba(6,8,7,1));
+  background-image: linear-gradient(to bottom, rgba(6,8,7,1), rgba(6,8,7,1));
 	float: right;
 	font: 300 1.5em 'lato', helvetica, serif;
-  	color: rgba(148,169,187,1);
-  	padding: 10px 10px;
-  	border: solid rgba(148,169,187,1) 4px;
-  	margin: 0;
-  	display: block;
-  	width: 200px;
+  color: rgba(168,178,57,1);
+  padding: 10px 10px;
+  border: solid rgba(168,178,57,1) 4px;
+  margin: 0;
+  display: block;
+  width: 200px;
 }
 
 .btn-rave:hover {
-  	background: rgba(148,169,187,1);
+  background: rgba(168,178,57,1);
  	color: rgba(255,255,255,1);
 }
 .btn-rave:active {
-  	background: rgba(148,169,187,1);
+  	background: rgba(168,178,57,1);
   	color: rgba(255,255,255,1);
 }
 
@@ -339,6 +354,12 @@ ul.booklist {
 */
 
 @media screen and (max-width: 915px) {
+  p {
+     margin-bottom: 2%;
+  }
+  .btn-box {
+    margin: 3% auto;
+  }
 												/*Header/Nav*/
 	header{
 		height: 65px;
@@ -346,23 +367,38 @@ ul.booklist {
 	}
 
 												/*Book List*/
-	.booklist img {
+  .intro-r {
+    	padding: 4% 0;
+  }
+  .booklist img {
 		width: 25%;
 	}
 	.my-review-pic img, .amazon img {
 		width: 20%;
 	}
-	.my-review-pic p, .amazon p, .rave p {
-	margin-bottom: 2%;
-	}
+  .my-review-pic p, .amazon p {
+    padding: 0 5%;
+  }
 													/*Listening - Current Rave*/
-	.rave img {
+	.rave-title {
+    padding: 2% 0 4% 0;
+  }
+  .rave img {
 		width: 30%;
 	}
-}	
-	
+  .p-rave {
+    padding: 4% 0 2% 0;
+  }
+}
+
 
 @media screen and (max-width: 645px) {
+  p {
+	   margin-bottom: 3%;
+	}
+  .btn-box {
+    margin: 4% auto;
+  }
 												/*Header/Nav*/
 	header {
 		height: 50px;
@@ -387,24 +423,41 @@ ul.booklist {
 		transition: .1s;
 	}
 												/*Book List*/
-	.booklist img {
+  .intro-r {
+    padding: 6% 0;
+  }
+  .booklist img {
 		width: 35%;
 	}
 	.my-review-pic img, .amazon img {
 		width: 25%;
 	}
-	.my-review-pic p, .amazon p, .rave p {
-	margin-bottom: 3%;
-	}
+
 												/*Listening - Current Rave*/
-	.rave img {
+  .rave-title {
+    padding: 4% 0 6% 0;
+  }
+  .rave img {
 		width: 40%;
 	}
+  .p-rave {
+    padding: 6% 0 4% 0;
+  }
+  .btn-rave {
+    float: none;
+    margin: auto;
+  }
 }
 
 
 
 @media screen and (max-width: 550px) {
+  p {
+    margin-bottom: 4%;
+  }
+  .btn-box {
+    margin: 5% auto;
+  }
 											/*Header / Nav*/
 	header {
 		height: auto;
@@ -423,23 +476,21 @@ ul.booklist {
 		text-align: center;
 	}
 											/*Book List*/
-	.booklist img {
+  .intro-r {
+    padding: 8% 0;
+  }
+  .booklist img {
 		width: 40%;
 	}
 	.my-review-pic img, .amazon img {
 		width: 30%;
 	}
-	.my-review-pic p, .amazon p, .rave p {
-	margin-bottom: 4%;
-	}
 													/*Listening - Current Rave*/
-	.rave img {
+  .rave-title {
+    padding: 6% 0 8% 0;
+  }
+  .rave img {
 		float: none;
 		width: 80%;
-	}
-
-	.btn-rave {
-		float: none;
-		text-align: center;
 	}
 }
