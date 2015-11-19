@@ -223,10 +223,10 @@ ul.booklist {
 
 .book {
 	-webkit-transition: all .5s ease;
-    -moz-transition: all .5s ease;
-    -o-transition: all .5s ease;
-    -ms-transition: all .5s ease;
-    transition: all .5s ease;
+  -moz-transition: all .5s ease;
+  -o-transition: all .5s ease;
+  -ms-transition: all .5s ease;
+  transition: all .5s ease;
 }
 .book:hover {
 	-webkit-filter: grayscale(100%);
@@ -265,10 +265,10 @@ ul.booklist {
 .amazon img {
 	-webkit-filter: grayscale(100%);
 	-webkit-transition: all .5s ease;
-    -moz-transition: all .5s ease;
-    -o-transition: all .5s ease;
-    -ms-transition: all .5s ease;
-    transition: all .5s ease;
+  -moz-transition: all .5s ease;
+  -o-transition: all .5s ease;
+  -ms-transition: all .5s ease;
+  transition: all .5s ease;
 }
 .amazon img:hover {
 	-webkit-filter: grayscale(0%);
@@ -310,8 +310,26 @@ ul.booklist {
 	width: 100%;
 }
 .rave-m-icons {
-  clear: both;
+  clear: left;
+  overflow:hidden;
+  width: 100%;
+  padding: 2% 0;
 }
+.rave-m-icons img {
+  float: none;
+  margin: auto;
+  width: 7%;
+  padding: 0 3%;
+  transition: all .5s ease;
+}
+
+.rave-m-icons img:hover {
+  transform: scale(1.1);
+}
+.rave-m-icons img:active {
+  transform: scale(1.2);
+}
+
 .p-rave {
 	width: 100%;
   padding: 2% 0 0 0;
@@ -384,10 +402,21 @@ ul.booklist {
     padding: 2% 0 4% 0;
   }
   .rave img {
-		width: 30%;
+		width: 25%;
 	}
   .p-rave {
     padding: 4% 0 2% 0;
+  }
+  .rave-m-icons {
+    padding: 4% 0;
+  }
+  .rave-m-icons img {
+    width: 10%;
+    padding: 0 4%;
+  }
+  .btn-rave {
+    float: none;
+    margin: auto;
   }
 }
 
@@ -440,13 +469,17 @@ ul.booklist {
   .rave img {
 		width: 40%;
 	}
+  .rave-m-icons {
+    padding: 6% 0;
+  }
+  .rave-m-icons img {
+    width: 20%;
+    padding: 0 5%;
+  }
   .p-rave {
     padding: 6% 0 4% 0;
   }
-  .btn-rave {
-    float: none;
-    margin: auto;
-  }
+
 }
 
 
@@ -490,7 +523,15 @@ ul.booklist {
     padding: 6% 0 8% 0;
   }
   .rave img {
-		float: none;
-		width: 80%;
-	}
+    float: none;
+    width: 80%;
+  }
+  .rave-m-icons {
+    padding: 8% 0;
+  }
+  .rave-m-icons img {
+    width: 20%;
+    padding: 0 6%;
+  }
+
 }
