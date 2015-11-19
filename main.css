@@ -320,7 +320,7 @@ ul.booklist {
   margin: auto;
   width: 7%;
   padding: 0 3%;
-  transition: all .5s ease;
+  transition: all .3s ease;
 }
 
 .rave-m-icons img:hover {
@@ -329,10 +329,9 @@ ul.booklist {
 .rave-m-icons img:active {
   transform: scale(1.2);
 }
-
 .p-rave {
 	width: 100%;
-  padding: 2% 0 0 0;
+  padding: 2% 0;
 }
 
 .btn-rave {
@@ -342,12 +341,12 @@ ul.booklist {
   background-image: -ms-linear-gradient(top, rgba(6,8,7,1), rgba(6,8,7,1));
   background-image: -o-linear-gradient(top, rgba(6,8,7,1), rgba(6,8,7,1));
   background-image: linear-gradient(to bottom, rgba(6,8,7,1), rgba(6,8,7,1));
-	float: right;
+	float: none;
 	font: 300 1.5em 'lato', helvetica, serif;
   color: rgba(168,178,57,1);
   padding: 10px 10px;
   border: solid rgba(168,178,57,1) 4px;
-  margin: 0;
+  margin: 0 auto;
   display: block;
   width: 200px;
 }
@@ -405,7 +404,7 @@ ul.booklist {
 		width: 25%;
 	}
   .p-rave {
-    padding: 4% 0 2% 0;
+    padding: 4% 0;
   }
   .rave-m-icons {
     padding: 4% 0;
@@ -413,10 +412,6 @@ ul.booklist {
   .rave-m-icons img {
     width: 10%;
     padding: 0 4%;
-  }
-  .btn-rave {
-    float: none;
-    margin: auto;
   }
 }
 
@@ -477,7 +472,7 @@ ul.booklist {
     padding: 0 5%;
   }
   .p-rave {
-    padding: 6% 0 4% 0;
+    padding: 6% 0;
   }
 
 }
@@ -533,5 +528,7 @@ ul.booklist {
     width: 20%;
     padding: 0 6%;
   }
-
+  .p-rave {
+    padding: 4% 0 8% 0;
+  }
 }
