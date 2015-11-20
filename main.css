@@ -288,11 +288,11 @@ ul.booklist {
 }
 
 .rave-title {
-	font: 100 3em 'lato', helvetica, serif;
+	font: 100 3.5em 'lato', helvetica, serif;
 	text-transform: uppercase;
 	text-align: center;
 	color: rgba(168,178,57,1);
-	padding: 0.5% 0 2.5% 0;
+	padding: 4% 0 6% 0;
 	letter-spacing: .125em;
 }
 
@@ -366,10 +366,10 @@ ul.booklist {
 	text-align: center;
 }
 .playlist-title, .playlist-title-sub-1, .playlist-title-sub-2 {
-  	font: 100 3em 'lato', helvetica, serif;
+  	font: 100 3.5em 'lato', helvetica, serif;
   	text-transform: uppercase;
   	text-align: center;
-  	padding: 3% 0;
+  	padding: 6% 0;
   	letter-spacing: .125em;
     color: rgba(255,255,255,1);
 }
@@ -461,7 +461,7 @@ ul.booklist {
   }
 													/*Listening - Current Rave*/
 	.rave-title {
-    padding: 2% 0 4% 0;
+    padding: 6% 0 8% 0;
   }
   .rave img {
 		width: 20%;
@@ -473,11 +473,11 @@ ul.booklist {
     padding: 4% 0;
   }
   .rave-m-icons img {
-    width: 10%;
+    width: 8%;
     padding: 0 4%;
   }
   .playlist-title, .playlist-title-sub-1, .more-p {
-    padding: 4% 0;
+    padding: 8% 0;
   }
   .playlist-title-sub-1 {
     visibility: visible;
@@ -542,7 +542,7 @@ ul.booklist {
 
 												/*Listening - Current Rave*/
   .rave-title {
-    padding: 4% 0 6% 0;
+    padding: 8% 0 10% 0;
   }
   .rave img {
 		width: 350%;
@@ -558,7 +558,7 @@ ul.booklist {
     padding: 6% 0;
   }
   .playlist-title, .playlist-title-sub-1, .more-p {
-    padding: 6% 0;
+    padding: 10% 0;
   }
 
 
@@ -602,7 +602,7 @@ ul.booklist {
 	}
 													/*Listening - Current Rave*/
   .rave-title {
-    padding: 6% 0 8% 0;
+    padding: 10% 0 12% 0;
   }
   .rave img {
     float: none;
@@ -619,7 +619,7 @@ ul.booklist {
     padding: 4% 0 8% 0;
   }
   .playlist-title, .playlist-title-sub-1, .more-p {
-    padding: 8% 0;
+    padding: 12% 0;
   }
 
 }
