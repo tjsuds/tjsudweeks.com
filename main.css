@@ -170,7 +170,7 @@ header ul.rowTwo {
 }
 
 
-.btn-1, .btn-2, .btn-back, .btn-rave {
+.btn-1, .btn-2, .btn-back, .btn-rave, .btn-playlists {
   background: rgba(255,255,255,.1);
   background-image: -webkit-linear-gradient(top, rgba(255,255,255,.1), rgba(255,255,255,.1));
   background-image: -moz-linear-gradient(top, rgba(255,255,255,.1), rgba(255,255,255,.1));
@@ -193,12 +193,12 @@ header ul.rowTwo {
   width: 225px;
 }
 
-.btn-1:hover, .btn-2:hover, .btn-back:hover, .btn-rave:hover {
+.btn-1:hover, .btn-2:hover, .btn-back:hover, .btn-rave:hover, .btn-playlists:hover {
   background: rgba(248,112,96,1);
   text-decoration: none;
   color: rgba(255,255,255,1);
 }
-.btn-1:active, .btn-2:active, .btn-back:active, .btn-rave:active {
+.btn-1:active, .btn-2:active, .btn-back:active, .btn-rave:active, .btn-playlists:active {
   background: rgba(248,112,96,1);
   text-decoration: none;
   color: rgba(255,255,255,1);
@@ -288,7 +288,7 @@ ul.booklist {
 }
 
 .rave-title {
-	font: 100 2.5em 'lato', helvetica, serif;
+	font: 100 3em 'lato', helvetica, serif;
 	text-transform: uppercase;
 	text-align: center;
 	color: rgba(168,178,57,1);
@@ -318,7 +318,7 @@ ul.booklist {
 .rave-m-icons img {
   float: none;
   margin: auto;
-  width: 7%;
+  width: 5%;
   padding: 0 3%;
   transition: all .3s ease;
 }
@@ -360,8 +360,71 @@ ul.booklist {
   	color: rgba(255,255,255,1);
 }
 
+.playlists {
+	background-color: rgba(148,169,187,.75);
+	overflow: hidden;
+	text-align: center;
+}
+.playlist-title, .playlist-title-sub-1, .playlist-title-sub-2 {
+  	font: 100 3em 'lato', helvetica, serif;
+  	text-transform: uppercase;
+  	text-align: center;
+  	padding: 3% 0;
+  	letter-spacing: .125em;
+    color: rgba(255,255,255,1);
+}
+.playlist-title-sub-1 {
+    visibility: hidden;
+    padding: 0;
+    height: 0;
+    width: 0;
+    font-size: 2.5em;
+}
+.playlist-title-sub-2 {
+  clear: both;
+  font-size: 2.5em;
+}
 
+.playlist-1, .playlist-2 {
+  width: 46%;
+  display: inline-block;
+  float: left;
+}
+.playlist-1 {
+  padding: 0 2.75%;
+}
+.playlist-1 iframe, .playlist-2 iframe {
+  width: 100%;
+  height: 450px;
+}
+.more-p {
+  padding: 0 0 3% 0;
+}
 
+.btn-playlists {
+  background: rgba(148,169,187,.00001);
+  background-image: -webkit-linear-gradient(top, rgba(148,169,187,.00001), rgba(148,169,187,.00001));
+  background-image: -moz-linear-gradient(top, rgba(148,169,187,.00001), rgba(148,169,187,.00001));
+  background-image: -ms-linear-gradient(top, rgba(148,169,187,.00001), rgba(148,169,187,.00001));
+  background-image: -o-linear-gradient(top, rgba(148,169,187,.00001), rgba(148,169,187,.00001));
+  background-image: linear-gradient(to bottom, rgba(148,169,187,.00001), rgba(148,169,187,.00001));
+	float: none;
+	font: 300 1.5em 'lato', helvetica, serif;
+  color: rgba(255,255,255,1);
+  padding: 10px 10px;
+  border: solid rgba(255,255,255,1) 4px;
+  margin: 0 auto;
+  display: block;
+  width: 200px;
+}
+.btn-playlists:hover {
+  background: rgba(255,255,255,1);
+ 	color: rgba(148,169,187,.75);
+}
+.btn-playlists:active {
+  	background: rgba(255,255,255,1);
+  	color: rgba(148,169,187,.75);
+}
 /*
 
 
@@ -401,7 +464,7 @@ ul.booklist {
     padding: 2% 0 4% 0;
   }
   .rave img {
-		width: 25%;
+		width: 20%;
 	}
   .p-rave {
     padding: 4% 0;
@@ -413,6 +476,26 @@ ul.booklist {
     width: 10%;
     padding: 0 4%;
   }
+  .playlist-title, .playlist-title-sub-1, .more-p {
+    padding: 4% 0;
+  }
+  .playlist-title-sub-1 {
+    visibility: visible;
+    clear: both;
+    height: inherit;
+    width: inherit;
+  }
+  .playlist-title-sub-2 {
+    visibility: hidden;
+    padding: 0;
+    height: 0;
+    width: 0;
+  }
+  .playlist-1, .playlist-2 {
+    width: 100%;
+    padding: 0;
+  }
+
 }
 
 
@@ -462,7 +545,7 @@ ul.booklist {
     padding: 4% 0 6% 0;
   }
   .rave img {
-		width: 40%;
+		width: 350%;
 	}
   .rave-m-icons {
     padding: 6% 0;
@@ -474,6 +557,10 @@ ul.booklist {
   .p-rave {
     padding: 6% 0;
   }
+  .playlist-title, .playlist-title-sub-1, .more-p {
+    padding: 6% 0;
+  }
+
 
 }
 
@@ -519,7 +606,7 @@ ul.booklist {
   }
   .rave img {
     float: none;
-    width: 80%;
+    width: 60%;
   }
   .rave-m-icons {
     padding: 8% 0;
@@ -531,4 +618,8 @@ ul.booklist {
   .p-rave {
     padding: 4% 0 8% 0;
   }
+  .playlist-title, .playlist-title-sub-1, .more-p {
+    padding: 8% 0;
+  }
+
 }
