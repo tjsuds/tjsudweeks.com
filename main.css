@@ -302,6 +302,18 @@ ul.booklist {
 	float: left;
 	width: 20%;
 	margin: 0 3% 3% 0;
+  -webkit-filter: grayscale(0%);
+  -webkit-transition: all .5s ease;
+  -moz-transition: all .5s ease;
+  -o-transition: all .5s ease;
+  -ms-transition: all .5s ease;
+  transition: all .5s ease;
+}
+.rave img:hover {
+	-webkit-filter: grayscale(100%);
+}
+.rave img:active {
+	transform: scale(1.1);
 }
 
 .rave p {
@@ -365,7 +377,7 @@ ul.booklist {
 	overflow: hidden;
 	text-align: center;
 }
-.playlist-title, .playlist-title-sub-1, .playlist-title-sub-2 {
+.playlist-title, .playlist-title-sub-1, .playlist-title-sub-2, .albums-title {
   	font: 100 3.5em 'lato', helvetica, serif;
   	text-transform: uppercase;
   	text-align: center;
@@ -425,6 +437,81 @@ ul.booklist {
   	background: rgba(255,255,255,1);
   	color: rgba(148,169,187,.75);
 }
+
+.albums {
+  background-color: rgba(60,63,66,.1);
+}
+.albums-title {
+  color: rgba(148,169,187,.75);
+}
+.scroll {
+  width: 100%;
+  height: auto;
+  background: rgba(60,63,66,.000001);
+  border: none;
+  overflow: scroll;
+  -webkit-overflow-scrolling: touch;
+  box-shadow: none;
+}
+.scroll ul {
+  float:left;
+  margin-right:-999em;
+  white-space: nowrap;
+  list-style: none;
+}
+.scroll li {
+  margin: 15px 0;
+  text-align: center;
+  float: left;
+  display: inline;
+  width: 450px;
+}
+
+.scroll img {
+  width: 90%;
+  margin: 0 auto;
+  display: block;
+}
+
+.scroll span {
+  padding: 3% 0 0 0;
+  margin: 0 auto;
+  display: block;
+  text-align: center;
+  width: 90%;
+}
+.scroll img {
+	-webkit-filter: grayscale(0%);
+	-webkit-transition: all .5s ease;
+  -moz-transition: all .5s ease;
+  -o-transition: all .5s ease;
+  -ms-transition: all .5s ease;
+  transition: all .5s ease;
+}
+.scroll img:hover {
+	-webkit-filter: grayscale(100%);
+}
+.scroll img:active {
+	transform: scale(1.02);
+}
+.album-m-icons img {
+    display: inline-block;
+    float: none;
+    margin: auto;
+    width: 15%;
+    padding: 0 3%;
+    transition: all .3s ease;
+}
+
+.album-m-icons img:hover {
+    transform: scale(1.1);
+}
+.album-m-icons img:active {
+    transform: scale(1.2);
+}
+
+
+
 /*
 
 
@@ -495,7 +582,12 @@ ul.booklist {
     width: 100%;
     padding: 0;
   }
-
+  .scroll li {
+    width: 400px;
+  }
+  .album-m-icons img {
+    width: 15%;
+  }
 }
 
 
@@ -560,8 +652,12 @@ ul.booklist {
   .playlist-title, .playlist-title-sub-1, .more-p {
     padding: 10% 0;
   }
-
-
+  .scroll li {
+    width: 350px;
+  }
+  .album-m-icons img {
+    width: 20%;
+  }
 }
 
 
@@ -621,5 +717,10 @@ ul.booklist {
   .playlist-title, .playlist-title-sub-1, .more-p {
     padding: 12% 0;
   }
-
+  .scroll li {
+    width: 250px;
+  }
+  .album-m-icons img {
+    width: 20%;
+  }
 }
