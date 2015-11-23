@@ -377,7 +377,7 @@ ul.booklist {
 	overflow: hidden;
 	text-align: center;
 }
-.playlist-title, .playlist-title-sub-1, .playlist-title-sub-2, .albums-title {
+.playlist-title, .playlist-title-sub-1, .playlist-title-sub-2, .albums-title, .albums-title-sub {
   	font: 100 3.5em 'lato', helvetica, serif;
   	text-transform: uppercase;
   	text-align: center;
@@ -444,6 +444,11 @@ ul.booklist {
 .albums-title {
   color: rgba(148,169,187,.75);
 }
+.albums-title-sub {
+  font: 100 2.5em 'lato', helvetica, serif;
+  color: rgba(148,169,187,.75);
+}
+
 .scroll {
   width: 100%;
   height: auto;
@@ -455,7 +460,7 @@ ul.booklist {
 }
 .scroll ul {
   float:left;
-  margin-right:-999em;
+  margin-right:-99999em;
   white-space: nowrap;
   list-style: none;
 }
@@ -652,6 +657,12 @@ ul.booklist {
   .playlist-title, .playlist-title-sub-1, .more-p {
     padding: 10% 0;
   }
+  .playlist-title, .playlist-title-sub-2, .albums-title, .rave-title {
+    font-size: 3em;
+  }
+  .playlist-title-sub-1, .albums-title-sub {
+    font-size: 1.8em;
+  }
   .scroll li {
     width: 350px;
   }
@@ -723,4 +734,14 @@ ul.booklist {
   .album-m-icons img {
     width: 20%;
   }
+}
+
+@media screen and (max-width: 320px) {
+  .playlist-title, .playlist-title-sub-2, .albums-title, .rave-title {
+    font-size: 2.5em;
+  }
+  .playlist-title-sub-1, .albums-title-sub {
+    font-size: 1.5em;
+  }
+
 }
