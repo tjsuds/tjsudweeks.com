@@ -496,9 +496,7 @@ ul.booklist {
 .scroll img:hover {
 	-webkit-filter: grayscale(100%);
 }
-.scroll img:active {
-	transform: scale(1.02);
-}
+
 .album-m-icons img {
     display: inline-block;
     float: none;
