@@ -822,10 +822,10 @@ ul.booklist {
 /*                      Monthly Specifics               */
 
 .oct-2015 {
-  background-color: purple;
+  background-color: rgba( 32, 20, 42, 1);
 }
 .title-oct-2015, .oct-2015 p {
-  color: black;
+  color: rgba(206, 172, 207, 1);
 }
 
 @media screen and (max-width: 915px) {
