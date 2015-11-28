@@ -513,8 +513,6 @@ ul.booklist {
     transform: scale(1.2);
 }
 
-
-
 /*
 
 
@@ -740,6 +738,147 @@ ul.booklist {
   }
   .playlist-title-sub-1, .albums-title-sub {
     font-size: 1.5em;
+  }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*                          RAVES                     */
+
+.nov-2015, .oct-2015 {
+	padding: 2%;
+	background-color: rgba(6,8,7,1);
+	overflow: hidden;
+	text-align: center;
+}
+
+.title-nov-2015, .title-oct-2015 {
+	font: 100 3.5em 'lato', helvetica, serif;
+	text-transform: uppercase;
+	text-align: center;
+	color: rgba(168,178,57,1);
+	padding: 4% 0 6% 0;
+	letter-spacing: .125em;
+}
+
+
+.nov-2015 img, .oct-2015 img {
+	display: inline-block;
+	float: left;
+	width: 20%;
+	margin: 0 3% 3% 0;
+  -webkit-filter: grayscale(0%);
+  -webkit-transition: all .5s ease;
+  -moz-transition: all .5s ease;
+  -o-transition: all .5s ease;
+  -ms-transition: all .5s ease;
+  transition: all .5s ease;
+}
+.nov-2015 img:hover, .oct-2015 img:hover {
+	-webkit-filter: grayscale(100%);
+}
+.nov-2015 img:active, .oct-2015 img:active {
+	transform: scale(1.1);
+}
+
+.nov-2015 p, .oct-2015 p {
+	font: 100 1.8em 'roboto', helvetica, serif;
+  color: rgba(168,178,57,1);
+	width: 100%;
+}
+.m-icons-nov-2015, .m-icons-oct-2015 {
+  clear: left;
+  overflow:hidden;
+  width: 100%;
+  padding: 2% 0;
+}
+.m-icons-nov-2015 img, .m-icons-oct-2015 img {
+  float: none;
+  margin: auto;
+  width: 5%;
+  padding: 0 3%;
+  transition: all .3s ease;
+}
+
+.m-icons-nov-2015 img:hover, .m-icons-oct-2015 img:hover {
+  transform: scale(1.1);
+}
+.m-icons-nov-2015 img:active, .m-icons-oct-2015 img:active {
+  transform: scale(1.2);
+}
+
+/*                      Monthly Specifics               */
+
+.oct-2015 {
+  background-color: purple;
+}
+.title-oct-2015, .oct-2015 p {
+  color: black;
+}
+
+@media screen and (max-width: 915px) {
+
+  .title-nov-2015, .title-oct-2015 {
+    padding: 6% 0 8% 0;
+  }
+  .nov-2015 img, .oct-2015 img {
+		width: 20%;
+	}
+  .m-icons-nov-2015, .m-icons-oct-2015 {
+    padding: 4% 0;
+  }
+  .m-icons-nov-2015 img, .m-icons-oct-2015 img {
+    width: 8%;
+    padding: 0 4%;
+  }
+
+}
+@media screen and (max-width: 645px) {
+
+  .title-nov-2015, .title-oct-2015 {
+    padding: 8% 0 10% 0;
+    font-size: 3em;
+  }
+  .nov-2015 img, .oct-2015 img {
+    width: 350%;
+  }
+  .m-icons-nov-2015, .m-icons-oct-2015 {
+    padding: 6% 0;
+  }
+  .m-icons-nov-2015 img, .m-icons-oct-2015 img {
+    width: 12%;
+    padding: 0 5%;
+  }
+
+}
+
+@media screen and (max-width: 550px) {
+
+  .title-nov-2015, .title-oct-2015 {
+    padding: 10% 0 12% 0;
+  }
+  .nov-2015 img, .oct-2015 img {
+    float: none;
+    width: 60%;
+  }
+  .m-icons-nov-2015, .m-icons-oct-2015 {
+    padding: 8% 0;
+  }
+  .m-icons-nov-2015 img, .m-icons-oct-2015 img {
+    width: 12%;
+    padding: 0 6%;
   }
 
 }
