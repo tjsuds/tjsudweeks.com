@@ -154,12 +154,12 @@ header ul.rowTwo {
 }
 
 /*----------------------------------READING CONTENT----------------------------------*/
-.intro-r {
-	font: 100 3em 'lato', helvetica, serif;
+.reading-title {
+	font: 100 3.5em 'lato', helvetica, serif;
 	text-transform: uppercase;
 	text-align: center;
 	color: rgba(248,112,96,1);
-	padding: 2.5% 0;
+	padding: 6% 0;
 	letter-spacing: .125em;
 }
 
@@ -282,7 +282,7 @@ ul.booklist {
 
 .rave {
 	padding: 2%;
-	background-color: rgba(6,8,7,1);
+	background-color: rgba(214,231,240,1);
 	overflow: hidden;
 	text-align: center;
 }
@@ -291,7 +291,7 @@ ul.booklist {
 	font: 100 3.5em 'lato', helvetica, serif;
 	text-transform: uppercase;
 	text-align: center;
-	color: rgba(168,178,57,1);
+	color: black;
 	padding: 4% 0 6% 0;
 	letter-spacing: .125em;
 }
@@ -318,7 +318,7 @@ ul.booklist {
 
 .rave p {
 	font: 100 1.8em 'roboto', helvetica, serif;
-  color: rgba(168,178,57,1);
+  color: black;
 	width: 100%;
 }
 .rave-m-icons {
@@ -347,28 +347,28 @@ ul.booklist {
 }
 
 .btn-rave {
-  background: rgba(6,8,7,1);
-  background-image: -webkit-linear-gradient(top, rgba(6,8,7,1), rgba(6,8,7,1));
-  background-image: -moz-linear-gradient(top, rgba(6,8,7,1), rgba(6,8,7,1));
-  background-image: -ms-linear-gradient(top, rgba(6,8,7,1), rgba(6,8,7,1));
-  background-image: -o-linear-gradient(top, rgba(6,8,7,1), rgba(6,8,7,1));
-  background-image: linear-gradient(to bottom, rgba(6,8,7,1), rgba(6,8,7,1));
+  background: rgba(213,230,240,1);
+  background-image: -webkit-linear-gradient(top, rgba(213,230,240,1), rgba(213,230,240,1));
+  background-image: -moz-linear-gradient(top, rgba(213,230,240,1), rgba(213,230,240,1));
+  background-image: -ms-linear-gradient(top, rgba(213,230,240,1), rgba(213,230,240,1));
+  background-image: -o-linear-gradient(top, rgba(213,230,240,1), rgba(213,230,240,1));
+  background-image: linear-gradient(to bottom, rgba(213,230,240,1), rgba(213,230,240,1));
 	float: none;
 	font: 300 1.5em 'lato', helvetica, serif;
-  color: rgba(168,178,57,1);
+  color: black;
   padding: 10px 10px;
-  border: solid rgba(168,178,57,1) 4px;
+  border: solid black 4px;
   margin: 0 auto;
   display: block;
   width: 200px;
 }
 
 .btn-rave:hover {
-  background: rgba(168,178,57,1);
+  background: black;
  	color: rgba(255,255,255,1);
 }
 .btn-rave:active {
-  	background: rgba(168,178,57,1);
+  	background: black;
   	color: rgba(255,255,255,1);
 }
 
@@ -513,8 +513,6 @@ ul.booklist {
     transform: scale(1.2);
 }
 
-
-
 /*
 
 
@@ -537,8 +535,8 @@ ul.booklist {
 	}
 
 												/*Book List*/
-  .intro-r {
-    	padding: 4% 0;
+  .reading-title {
+    	padding: 8% 0;
   }
   .booklist img {
 		width: 25%;
@@ -625,8 +623,8 @@ ul.booklist {
 		transition: .1s;
 	}
 												/*Book List*/
-  .intro-r {
-    padding: 6% 0;
+  .reading-title {
+    padding: 10% 0;
   }
   .booklist img {
 		width: 35%;
@@ -640,7 +638,7 @@ ul.booklist {
     padding: 8% 0 10% 0;
   }
   .rave img {
-		width: 350%;
+		width: 35%;
 	}
   .rave-m-icons {
     padding: 6% 0;
@@ -696,8 +694,9 @@ ul.booklist {
 		text-align: center;
 	}
 											/*Book List*/
-  .intro-r {
-    padding: 8% 0;
+  .reading-title {
+    padding: 12% 0;
+    font-size: 3em;
   }
   .booklist img {
 		width: 40%;
@@ -735,11 +734,190 @@ ul.booklist {
 }
 
 @media screen and (max-width: 320px) {
-  .playlist-title, .playlist-title-sub-2, .albums-title, .rave-title {
+  .reading-title, .playlist-title, .playlist-title-sub-2, .albums-title, .rave-title {
     font-size: 2.5em;
   }
   .playlist-title-sub-1, .albums-title-sub {
     font-size: 1.5em;
   }
+  .scroll li {
+    width: 210px;
+  }
+  .album-m-icons img {
+    width: 20%;
+  }
 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*                          RAVES                     */
+
+.dec-2015, .nov-2015, .oct-2015 {
+	padding: 2%;
+	background-color: rgba(6,8,7,1);
+	overflow: hidden;
+	text-align: center;
+}
+
+.title-dec-2015, .title-nov-2015, .title-oct-2015 {
+	font: 100 3.5em 'lato', helvetica, serif;
+	text-transform: uppercase;
+	text-align: center;
+	color: rgba(168,178,57,1);
+	padding: 4% 0 6% 0;
+	letter-spacing: .125em;
+}
+
+.dec-2015 img, .nov-2015 img, .oct-2015 img {
+	display: inline-block;
+	float: left;
+	width: 20%;
+	margin: 0 3% 3% 0;
+  -webkit-filter: grayscale(0%);
+  -webkit-transition: all .5s ease;
+  -moz-transition: all .5s ease;
+  -o-transition: all .5s ease;
+  -ms-transition: all .5s ease;
+  transition: all .5s ease;
+}
+
+.dec-2015 img:hover, .nov-2015 img:hover, .oct-2015 img:hover {
+	-webkit-filter: grayscale(100%);
+}
+
+.dec-2015 img:active, .nov-2015 img:active, .oct-2015 img:active {
+	transform: scale(1.1);
+}
+
+.dec-2015 p, .nov-2015 p, .oct-2015 p {
+	font: 100 1.8em 'roboto', helvetica, serif;
+  color: rgba(168,178,57,1);
+	width: 100%;
+}
+
+.m-icons-dec-2015, .m-icons-nov-2015, .m-icons-oct-2015 {
+  clear: left;
+  overflow:hidden;
+  width: 100%;
+  padding: 2% 0;
+}
+
+.m-icons-dec-2015 img, .m-icons-nov-2015 img, .m-icons-oct-2015 img {
+  float: none;
+  margin: auto;
+  width: 5%;
+  padding: 0 3%;
+  transition: all .3s ease;
+}
+
+.m-icons-dec-2015 img:hover, .m-icons-nov-2015 img:hover, .m-icons-oct-2015 img:hover {
+  transform: scale(1.1);
+}
+
+.m-icons-dec-2015 img:active, .m-icons-nov-2015 img:active, .m-icons-oct-2015 img:active {
+  transform: scale(1.2);
+}
+
+
+/*                      Monthly Specifics               */
+
+
+.oct-2015 {
+  background-color: rgba( 32, 20, 42, 1);
+}
+.title-oct-2015, .oct-2015 p {
+  color: rgba(206, 172, 207, 1);
+}
+
+.dec-2015 {
+  background-color: rgba( 213, 230, 240, 1);
+}
+.title-dec-2015, .dec-2015 p {
+  color: rgba(56,31,13,1);;
+}
+
+
+/*                      Rave Media Queries              */
+
+
+@media screen and (max-width: 915px) {
+
+  .title-dec-2015, .title-nov-2015, .title-oct-2015 {
+    padding: 6% 0 8% 0;
+  }
+
+  .dec-2015 img, .nov-2015 img, .oct-2015 img {
+		width: 20%;
+	}
+
+  .m-icons-dec-2015, .m-icons-nov-2015, .m-icons-oct-2015 {
+    padding: 4% 0;
+  }
+
+  .m-icons-dec-2015 img, .m-icons-nov-2015 img, .m-icons-oct-2015 img {
+    width: 8%;
+    padding: 0 4%;
+  }
+
+}
+@media screen and (max-width: 645px) {
+
+  .title-dec-2015, .title-nov-2015, .title-oct-2015 {
+    padding: 8% 0 10% 0;
+    font-size: 3em;
+  }
+
+  .dec-2015 img, .nov-2015 img, .oct-2015 img {
+    width: 35%;
+  }
+
+  .m-icons-dec-2015, .m-icons-nov-2015, .m-icons-oct-2015 {
+    padding: 6% 0;
+  }
+
+  .m-icons-dec-2015 img, .m-icons-nov-2015 img, .m-icons-oct-2015 img {
+    width: 12%;
+    padding: 0 5%;
+  }
+
+}
+
+@media screen and (max-width: 550px) {
+
+  .title-dec-2015, .title-nov-2015, .title-oct-2015 {
+    padding: 10% 0 12% 0;
+  }
+
+  .dec-2015 img, .nov-2015 img, .oct-2015 img {
+    float: none;
+    width: 60%;
+  }
+
+  .m-icons-dec-2015, .m-icons-nov-2015, .m-icons-oct-2015 {
+    padding: 8% 0;
+  }
+
+  .m-icons-dec-2015 img, .m-icons-nov-2015 img, .m-icons-oct-2015 img {
+    width: 12%;
+    padding: 0 6%;
+  }
+
+}
+
+@media screen and (max-width: 320px) {
+  .title-dec-2015, .title-nov-2015, .title-oct-2015 {
+    font-size: 2.5em;
+  }
 }
