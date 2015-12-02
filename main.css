@@ -191,13 +191,66 @@ header ul.rowTwo {
   height: 400px;
   padding: 6% 0%;
 }
+.creation-text {
+  width: 70%;
+  margin: 0 auto;
+}
+.creation-text p {
+  font: 100 1.8em 'roboto', helvetica, serif;
+  text-align: justify;
+  width: 100%;
+}
+
+#cable-holder {
+
+}
+
+#beasley-vid {
+  background-color: black;
+  color: rgba(252,163,17,1);
+}
+#beasley-vid-caption {
+  font: 100 1.4em 'roboto', helvetica, serif;
+  text-align: center;
+  color: rgba(252,163,17,1);
+}
+#beasley-vid-caption a {
+  font-size: 1em;
+}
+#beasley-vid-caption a:hover {
+  color: rgba(215,236,220,1);
+}
 
 #gender-vid {
   background-color: rgba(22,12,40,1);
-  color: rgba(248,252,218,1)
+  color: rgba(248,252,218,1);
 }
-#cable-holder {
+#gender-vid-caption {
+  font: 100 1.4em 'roboto', helvetica, serif;
+  text-align: center;
+  color: rgba(248,252,218,1);
+}
+#gender-vid-caption a {
+  font-size: 1em;
+}
+#gender-vid-caption a:hover {
+  color: rgba(0,173,239,1);
+}
 
+#holiday-2014-vid {
+  background-color: rgba(184,255,185,1);
+  color: rgba(194,1,20,1);
+}
+#holiday-2014-caption {
+  font: 100 1.4em 'roboto', helvetica, serif;
+  text-align: center;
+  color: rgba(194,1,20,1);
+}
+#holiday-2014-caption a {
+  font-size: 1em;
+}
+#holiday-2014-caption a:hover {
+  color: rgba(248,252,218,1);
 }
 
 /*----------------------------------READING CONTENT----------------------------------*/
@@ -610,6 +663,9 @@ ul.booklist {
     height: 342px;
     padding: 8% 0%;
   }
+  .creation-text {
+    width: 80%;
+  }
 
 
   .booklist img {
@@ -710,6 +766,9 @@ ul.booklist {
     height: 285px;
     padding: 10% 0%;
   }
+  .creation-text {
+    width: 90%;
+  }
 
 												/*Book List*/
   .creating-title, .reading-title {
@@ -791,6 +850,9 @@ ul.booklist {
     width: 300px;
     height: 171px;
     padding: 12% 0%;
+  }
+  .creation-text {
+    width: 100%;
   }
 
 											/*Book List*/
