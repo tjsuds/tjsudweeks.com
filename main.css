@@ -147,20 +147,202 @@ header ul.rowTwo {
 }
 /*current link colors -----------change colors eventually!*/
 #current-c, #current-r, #current-w, #current-le, #current-p {
-	color: rgba(248,112,96,1);
+	color: rgba(109,203,119,1);
+}
+#current-r {
+  color: rgba(248,112,96,1);
 }
 #current-li {
   color: rgba(148,169,187,1);
 }
+/*----------------------------------CREATING CONTENT----------------------------------*/
+.creating-title {
+  font: 100 3.5em 'lato', helvetica, serif;
+  text-transform: uppercase;
+  text-align: center;
+  color: rgba(109,203,119,1);
+  padding: 6% 0%;
+  margin: 0 2%;
+  letter-spacing: .125em;
+}
+.creation {
+  padding: 2%;
+  overflow: hidden;
+  text-align: center;
+}
+.creation-title, .creation-date {
+  font: 100 3.0em 'lato', helvetica, serif;
+  text-transform: uppercase;
+  text-align: center;
+  color: black;
+  padding-top: 2%;
+  letter-spacing: .125em;
+}
+.creation-date {
+  font-size: 2em;
+  padding-top: .5%;
+  text-transform: none;
+}
+.creation-video {
+  margin: 0 auto;
+}
+.creation-video iframe {
+  width: 700px;
+  height: 400px;
+  padding: 6% 0%;
+}
+.creation-text {
+  width: 70%;
+  margin: 0 auto;
+}
+.creation-text p {
+  font: 100 1.8em 'roboto', helvetica, serif;
+  text-align: justify;
+  width: 100%;
+}
 
+#cable-holder {
+  background-color: rgba(234,234,234,1);
+  color: rgba(79,109,122,1);
+}
+.cable-holder-heading {
+  font: 100 2.0em 'lato', helvetica, serif;
+  padding: 2%;
+  text-transform: uppercase;
+}
+.cable-pics {
+	float: left;
+	width: 100%;
+	margin: 3% auto;
+	text-align: center;
+}
+.cable-pics li {
+	display: inline;
+}
+.cable-pics img {
+	width: 30%;
+	margin: 2%;
+}
+
+#beasley-vid {
+  background-color: black;
+  color: rgba(252,163,17,1);
+}
+#beasley-vid-caption {
+  font: 100 1.4em 'roboto', helvetica, serif;
+  text-align: center;
+  color: rgba(252,163,17,1);
+}
+#beasley-vid-caption a {
+  font-size: 1em;
+}
+#beasley-vid-caption a:hover {
+  color: rgba(215,236,220,1);
+}
+
+#gender-vid {
+  background-color: rgba(22,12,40,1);
+  color: rgba(248,252,218,1);
+}
+#gender-vid-caption {
+  font: 100 1.4em 'roboto', helvetica, serif;
+  text-align: center;
+  color: rgba(248,252,218,1);
+}
+#gender-vid-caption a {
+  font-size: 1em;
+}
+#gender-vid-caption a:hover {
+  color: rgba(0,173,239,1);
+}
+
+#mbr-logo {
+  background: white;
+  color: rgba(71,101,120,1);
+}
+#mbr-logo a {
+  font-size: 1em;
+  color: rgba(71,101,120,1);
+}
+#mbr-logo a:hover {
+  color: rgba(56,167,0,1);
+}
+
+#mbr-logo-caption {
+  font: 100 1.4em 'roboto', helvetica, serif;
+  text-align: center;
+  color: rgba(71,101,120,1);
+}
+#mbr-logo-caption a {
+  font-size: 1em;
+  color: rgba(71,101,120,1);
+}
+#mbr-logo-caption a:hover {
+  color: rgba(56,167,0,1);
+}
+.mbr-pics-1 {
+  margin: 3% auto;
+  text-align: center;
+}
+.mbr-pics-1 img {
+	width: 50%;
+	margin: 2%;
+}
+
+.mbr-pics-2 {
+	float: left;
+	width: 100%;
+	margin: 3% auto;
+	text-align: center;
+}
+.mbr-pics-2 li {
+	display: inline;
+}
+.mbr-pics-2 img {
+	width: 20%;
+	margin: 2%;
+}
+
+#holiday-2014-vid {
+  background-color: rgba(184,255,185,1);
+  color: rgba(194,1,20,1);
+}
+#holiday-2014-caption {
+  font: 100 1.4em 'roboto', helvetica, serif;
+  text-align: center;
+  color: rgba(194,1,20,1);
+}
+#holiday-2014-caption a {
+  font-size: 1em;
+}
+#holiday-2014-caption a:hover {
+  color: rgba(248,252,218,1);
+}
+
+#sf-vid {
+  background-color: rgba(236,235,237,1);
+  color: rgba(191,51,49,1);
+}
+#sf-vid-caption {
+  font: 100 1.4em 'roboto', helvetica, serif;
+  text-align: center;
+  color: rgba(191,51,49,1);
+}
+#sf-vid-caption a {
+  font-size: 1em;
+}
+#sf-vid-caption a:hover {
+  color: rgba(255,192,127,1);
+}
 /*----------------------------------READING CONTENT----------------------------------*/
 .reading-title {
 	font: 100 3.5em 'lato', helvetica, serif;
 	text-transform: uppercase;
 	text-align: center;
 	color: rgba(248,112,96,1);
-	padding: 6% 0;
+	padding: 6% 0%;
 	letter-spacing: .125em;
+  margin: 0 2%;
 }
 
 .btn-box {
@@ -207,7 +389,7 @@ header ul.rowTwo {
 
 /*----------------------------Book List------------------------------*/
 
-ul.booklist {
+.booklist {
 	float: left;
 	width: 100%;
 	margin: 3% auto;
@@ -292,7 +474,7 @@ ul.booklist {
 	text-transform: uppercase;
 	text-align: center;
 	color: black;
-	padding: 4% 0 6% 0;
+	padding: 4% 2% 6% 2%;
 	letter-spacing: .125em;
 }
 
@@ -381,7 +563,7 @@ ul.booklist {
   	font: 100 3.5em 'lato', helvetica, serif;
   	text-transform: uppercase;
   	text-align: center;
-  	padding: 6% 0;
+  	padding: 6% 2%;
   	letter-spacing: .125em;
     color: rgba(255,255,255,1);
 }
@@ -516,7 +698,20 @@ ul.booklist {
 /*
 
 
+
+
+
+
+
+
 									!!!!!!!!!!!@MEDIA QUERIES!!!!!!!!!
+
+
+
+
+
+
+
 
 
 */
@@ -535,9 +730,33 @@ ul.booklist {
 	}
 
 												/*Book List*/
-  .reading-title {
+  .creating-title, .reading-title {
     	padding: 8% 0;
   }
+  .creation-title {
+    padding-top: 4%;
+  }
+  .creation-date {
+    padding-top: 1%;
+  }
+  .creation-video iframe {
+    width: 600px;
+    height: 342px;
+    padding: 8% 0%;
+  }
+  .creation-text {
+    width: 80%;
+  }
+  .cable-pics img {
+    width: 35%;
+  }
+  .mbr-pics-1 img {
+    width: 60%;
+  }
+  .mbr-pics-2 img {
+    width: 30%;
+  }
+
   .booklist img {
 		width: 25%;
 	}
@@ -622,8 +841,35 @@ ul.booklist {
 		font: 100 2em 'roboto', helvetica, serif;
 		transition: .1s;
 	}
+
+												/*Creations*/
+  .creation-title {
+    padding-top: 8%;
+    font-size: 2.5em;
+  }
+  .creation-date {
+    font-size: 2.0em;
+  }
+  .creation-video iframe {
+    width: 500px;
+    height: 285px;
+    padding: 10% 0%;
+  }
+  .creation-text {
+    width: 90%;
+  }
+  .cable-pics img {
+    width: 45%;
+  }
+  .mbr-pics-1 img {
+    width: 75%;
+  }
+  .mbr-pics-2 img {
+    width: 40%;
+  }
+
 												/*Book List*/
-  .reading-title {
+  .creating-title, .reading-title {
     padding: 10% 0;
   }
   .booklist img {
@@ -693,8 +939,38 @@ ul.booklist {
 	.rowOne a, .rowTwo a {
 		text-align: center;
 	}
+
+											/*Creations*/
+  .creation-title {
+    padding-top: 10%;
+  }
+  .creation-video iframe {
+    width: 300px;
+    height: 171px;
+    padding: 12% 0%;
+  }
+  .creation-text {
+    width: 100%;
+  }
+  .cable-pics {
+  	float: none;
+  	width: 100%;
+  }
+  .cable-pics li {
+  	display: block;
+  }
+  .cable-pics img {
+    width: 95%;
+  }
+  .mbr-pics-1 img {
+    width: 95%;
+  }
+  /*.mbr-pics-2 img {
+    width: 95%;
+  }*/
+
 											/*Book List*/
-  .reading-title {
+  .creating-title, .reading-title {
     padding: 12% 0;
     font-size: 3em;
   }
@@ -734,10 +1010,14 @@ ul.booklist {
 }
 
 @media screen and (max-width: 320px) {
-  .reading-title, .playlist-title, .playlist-title-sub-2, .albums-title, .rave-title {
+  .creating-title, .reading-title, .playlist-title, .playlist-title-sub-2, .albums-title, .rave-title {
     font-size: 2.5em;
   }
-  .playlist-title-sub-1, .albums-title-sub {
+  .creation-title {
+    font-size: 2em;
+  }
+
+  .creation-date, .playlist-title-sub-1, .albums-title-sub {
     font-size: 1.5em;
   }
   .scroll li {
