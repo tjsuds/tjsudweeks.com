@@ -694,6 +694,10 @@ header ul.rowTwo {
 .album-m-icons img:active {
     transform: scale(1.2);
 }
+/*----------------------------------LEARNING CONTENT----------------------------------*/
+.m-profile {
+  background-color: red;
+}
 
 /*
 
