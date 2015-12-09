@@ -12,28 +12,30 @@
 		<script type="text/javascript">
 			document.addEventListener("touchstart", function(){}, true)
 		</script>
+		<script src="scripts/modernizr.js"></script>
 	</head>
 	<body>
 		<section class="site">
 
 			<header>
 				<div class='home'><a href="index.html">TJ Sudweeks <em>is ...</em></a></div>
-				<ul class='rowOne'>
-					<li><a href="creating.html"><span id='current-c'>creating,</span></a></li>
-					<li><a href="reading.html">reading,</a></li>
-					<li><a href="listening.html">listening,</a></li>
-				</ul>
-				<ul class='rowTwo'>
-					<li><a href="working.html">working,</a></li>
-					<li><a href="learning.html">learning,</a></li>
+			</header>
+			<nav>
+				<ul class="cd-primary-nav">
+					<li><a href="creating.html">creating</a></li>
+					<li><a href="reading.html">reading</a></li>
+					<li><a href="listening.html">listening</a></li>
+					<li><a href="working.html">working</a></li>
+					<li><a href="learning.html">learning</a></li>
 					<li><a href="playing.html">playing</a></li>
 				</ul>
-			</header>
+			</nav>
+
 			<hr>
 
 			<section class="main">
 
-				<div class="creating-title">creating whatever comes to mind ...</div>
+				<div class="creating-title">creating whatever comes to mind</div>
 
 				<div class="creation" id="beasley-vid">
 
@@ -171,11 +173,26 @@
 
 			</section>
 
+			<div class="cd-overlay-nav">
+				<span></span>
+			</div> <!-- cd-overlay-nav -->
+
+			<div class="cd-overlay-content">
+				<span></span>
+			</div> <!-- cd-overlay-content -->
+
+			<a href="#0" class="cd-nav-trigger">Menu<span class="cd-icon"></span></a>
+
 			<hr>
 			<footer>
 				<h1>in Midway, Utah.</h1>
 			</footer>
 
 		</section>
+
+		<script src="scripts/jquery-2.1.4.js"></script>
+		<script src="scripts/velocity.min.js"></script>
+		<script src="scripts/nav.js"></script>
+
 	</body>
 </html>
