@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<link rel="stylesheet" href="../main.css">
+		<title>11-22-63</title>
+		<link rel="stylesheet" href="../../../resources/css/main.css">
 		<!-- responisive scaling -->
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<!-- lato font -->
@@ -12,32 +13,42 @@
 		<script type="text/javascript">
 			document.addEventListener("touchstart", function(){}, true)
 		</script>
+		<script src="../../../vendors/modernizr/modernizr.js"></script>
 	</head>
 	<body>
 		<section class="site">
 
 			<header>
-				<div class='home'><a href="../index.html">TJ Sudweeks <em>is ...</em></a></div>
-				<ul class='rowOne'>
-					<li><a href="../creating.html">creating,</a></li>
-					<li><a href="../reading.html"><span id='current-r'>reading,</span></a></li>
-					<li><a href="../listening.html">listening,</a></li>
-				</ul>
-				<ul class='rowTwo'>
-					<li><a href="../working.html">working,</a></li>
-					<li><a href="../learning.html">learning,</a></li>
-					<li><a href="../playing.html">playing</a></li>
+				<div class='home'><a href="../../../index.html">TJ Sudweeks <em>is ...</em></a></div>
+				<ul class='desktop-nav'>
+					<li id="hover-c"><a href="../../creating/creating.html">creating,</a></li>
+					<li id="hover-r"><a href="../reading.html"><span id='current-r'>reading,</span></a></li>
+					<li id="hover-li"><a href="../../listening/listening.html">listening,</a></li>
+					<li id="hover-w"><a href="../../working/working.html">working,</a></li>
+					<li id="hover-le"><a href="../../learning/learning.html">learning,</a></li>
+					<li id="hover-p"><a href="../../playing/playing.html">playing</a></li>
 				</ul>
 			</header>
+			<nav>
+				<ul class="cd-primary-nav">
+					<li id="hover-c"><a href="../../creating/creating.html">creating</a></li>
+					<li id="hover-r"><a href="../reading.html">reading</a></li>
+					<li id="hover-li"><a href="../../listening/listening.html">listening</a></li>
+					<li id="hover-w"><a href="../../working/working.html">working</a></li>
+					<li id="hover-le"><a href="../../learning/learning.html">learning</a></li>
+					<li id="hover-p"><a href="../../playing/playing.html">playing</a></li>
+				</ul>
+			</nav>
+
 			<hr>
 
 			<section class="main">
 
-				<div class='banner'><a href="https://www.behance.net/gallery/29035167/the-martian-poster" target='_blank'><img src="../photos/books/the-martian-banner.jpg" alt='The Martian Poster concept by Marion Kamper'></a></div>
+				<div class='banner'><a href="https://en.wikipedia.org/wiki/Assassination_of_John_F._Kennedy" target='_blank'><img src="../../../resources/images/books/11-22-63-banner.jpg" alt='JFK and wife in convertible'></a></div>
 
 				<div class="reading-title">my thoughts</div>
 				<div class='my-review-pic'>
-					<img src="../photos/me-halfcircle.png">
+					<img src="../../../resources/images/misc/me-halfcircle.png">
 					<p><em>Jimla. Jimla. Jimla.</em> This word and phrases like &#39the past is obdurate&#39 may just stay with me forever.</p>
 					<p>My journey with this book was a long one. I casually loaded it onto my kindle in preparation for a long flight back in November 2011 when it was released. I read through the first few chapters with little engagement and prematurely judged the concept as just another cliche time travel story. Just shy of four years later my rebounded curiosity in the JFK shooting gave me just enough interest to give it another shot. <strong>And I'm so glad that I did.</strong></p>
 					<p>Leave it up to Stephen King to take a stale concept and make it great again. King doesn't hesitate to incorporate the dark and creepy moments that I covertly crave. I seriously love the interactions the main character, Jake Epping (aka George Amberson) has with the &#39rabbit hole&#39 bouncers and his unpredicable and cringeworthy fight will the obdurate past. (I'll be honest, I actually had to Google &#39obdurate&#39 for the definition. So don't hesitate.)</p>
@@ -49,7 +60,7 @@
 
 				<div class="reading-title">Book Description</div>
 				<div class='amazon'>
-					<a href="http://www.amazon.com/11-22-63-Stephen-King-ebook/dp/B004Q7CIFI/ref=tmm_kin_swatch_0?_encoding=UTF8&qid=&sr=" target='_blank'><img src="../photos/amazon.png"></a>
+					<a href="http://www.amazon.com/11-22-63-Stephen-King-ebook/dp/B004Q7CIFI/ref=tmm_kin_swatch_0?_encoding=UTF8&qid=&sr=" target='_blank'><img src="../../../resources/images/misc/amazon.png"></a>
 					<p>On November 22, 1963, three shots rang out in Dallas, President Kennedy died, and the world changed. What if you could change it back? Stephen King's heart-stoppingly dramatic new novel is about a man who travels back in time to prevent the JFK assassination&#8212a thousand page tour de force.</p>
 					<p>Following his massively successful novel <em>Under the Dome,</em> King sweeps readers back in time to another moment&#8212a real life moment&#8212when everything went wrong: the JFK assassination. And he introduces readers to a character who has the power to change the course of history.</p>
 					<p>Jake Epping is a thirty-five-year-old high school English teacher in Lisbon Falls, Maine, who makes extra money teaching adults in the GED program. He receives an essay from one of the students&#8212a gruesome, harrowing first person story about the night 50 years ago when Harry Dunning's father came home and killed his mother, his sister, and his brother with a hammer. Harry escaped with a smashed leg, as evidenced by his crooked walk.</p>
@@ -62,11 +73,25 @@
 				</div>
 			</section>
 
+			<div class="cd-overlay-nav">
+				<span></span>
+			</div> <!-- cd-overlay-nav -->
+			<div class="cd-overlay-content">
+				<span></span>
+			</div> <!-- cd-overlay-content -->
+			<a href="#0" class="cd-nav-trigger">Menu<span class="cd-icon"></span></a>
+
+
 			<hr>
 			<footer>
 				<h1>in Midway, Utah.</h1>
 			</footer>
 
 		</section>
+
+		<script src="../../../vendors/jquery/jquery-2.1.4.js"></script>
+		<script src="../../../vendors/velocity/velocity.min.js"></script>
+		<script src="../../../resources/js/nav.js"></script>
+
 	</body>
 </html>

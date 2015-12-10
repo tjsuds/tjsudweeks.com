@@ -58,12 +58,23 @@ body, h1 , h2, h3, h4, p, div, header, footer, section, ul, ol, li, a {
 	/*my additions to the boilerplate*/
 	font: inherit;
 	list-style: none;
-	color: rgba(60,63,66,1);
+	color: black;
 }
 p {
   margin-bottom: 1%;
   text-align: justify;
 }
+
+*, *::after, *::before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+*::after, *::before {
+  content: '';
+}
+
 /*---------------------------------------------------------------------------------*/
 .site {
 	font-size: 62.5%; /* 1em = 10px */
@@ -72,10 +83,10 @@ p {
 }
 
 header {
-	padding: 2% 0 0 0; /* 30px */
+	padding: 25px 0 0 0; /* 30px */
 	position: relative;
   width: 90%;
-  margin: .25% auto;
+  margin: 0 auto;
 }
 
 .index-head {
@@ -119,42 +130,362 @@ footer {
 /*------------------------------------------------------------------------------------*/
 /*Pages Template*/
 												/*Header / Nav*/
-header ul.rowOne {
-	display: inline;
-	position: absolute;
-	bottom: 0;
-	right: 282px;
-}
-header ul.rowTwo {
-	display: inline;
-	position: absolute;
-	bottom: 0;
-	right: 0;
-}
-
-.rowOne li, .rowTwo li {
-	display: inline;
-	padding-left: 5px;
-}
-
-.rowOne a, .rowTwo a {
-	font: 100 2.5em 'roboto', helvetica, serif;
-}
-
 .home {
 	display: inline;
 	font: 100 3em 'roboto', helvetica, serif;
 }
-/*current link colors -----------change colors eventually!*/
-#current-c, #current-r, #current-w, #current-le, #current-p {
+.desktop-nav {
+	display: inline;
+	position: absolute;
+	bottom: 0;
+	right: -35px;
+  width: 620px;
+}
+.desktop-nav li {
+  display: inline;
+  padding-left: 5px;
+}
+.desktop-nav a {
+  font: 100 2.5em 'roboto', helvetica, serif;
+}
+
+#current-c, #hover-c a:hover, #current-w, #current-le, #current-p {
 	color: rgba(109,203,119,1);
 }
-#current-r {
+#current-r, #hover-r a:hover {
   color: rgba(248,112,96,1);
 }
-#current-li {
+#current-li, #hover-li a:hover {
   color: rgba(148,169,187,1);
 }
+
+nav a {
+  font: 100 5em 'roboto', helvetica, serif;
+  color: white;
+  text-decoration: none;
+}
+
+/* --------------------------------
+
+Mobile Nav Components
+
+-------------------------------- */
+
+header {
+  z-index: 3;
+}
+
+.cd-nav-trigger {
+  position: fixed;
+  display: inline-block;
+}
+
+.cd-nav-trigger {
+  top: -10%;
+  right: 5%;
+  height: 45px;
+  width: 45px;
+  z-index: 5;
+  /* image replacement */
+  overflow: hidden;
+  text-indent: 100%;
+  white-space: nowrap;
+}
+
+@media screen and (max-width: 920px) {
+  .desktop-nav {
+    visibility: hidden;
+    width: 2px;
+    right: none;
+    left: -300px;
+  }
+  .cd-nav-trigger {
+    top: 2.25%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .cd-nav-trigger {
+    top: 2%;
+  }
+}
+@media only screen
+  and (max-width: 736px)
+  and (orientation: landscape) {
+  .cd-nav-trigger {
+    top: 4%;
+  }
+}
+.cd-nav-trigger .cd-icon {
+  /* icon created in CSS */
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  bottom: auto;
+  right: auto;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  -moz-transform: translateX(-50%) translateY(-50%);
+  -ms-transform: translateX(-50%) translateY(-50%);
+  -o-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+  display: inline-block;
+  width: 18px;
+  height: 3px;
+  background-color: #ffffff;
+  z-index: 10;
+}
+.cd-nav-trigger .cd-icon::before, .cd-nav-trigger .cd-icon:after {
+  /* upper and lower lines of the menu icon */
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #ffffff;
+  /* Force Hardware Acceleration in WebKit */
+  -webkit-transform: translateZ(0);
+  -moz-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  -o-transform: translateZ(0);
+  transform: translateZ(0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  /* apply transition to transform property */
+  -webkit-transition: -webkit-transform .3s;
+  -moz-transition: -moz-transform .3s;
+  transition: transform .3s;
+}
+.cd-nav-trigger .cd-icon::before {
+  -webkit-transform: translateY(-6px) rotate(0deg);
+  -moz-transform: translateY(-6px) rotate(0deg);
+  -ms-transform: translateY(-6px) rotate(0deg);
+  -o-transform: translateY(-6px) rotate(0deg);
+  transform: translateY(-6px) rotate(0deg);
+}
+.cd-nav-trigger .cd-icon::after {
+  -webkit-transform: translateY(6px) rotate(0deg);
+  -moz-transform: translateY(6px) rotate(0deg);
+  -ms-transform: translateY(6px) rotate(0deg);
+  -o-transform: translateY(6px) rotate(0deg);
+  transform: translateY(6px) rotate(0deg);
+}
+.cd-nav-trigger::before, .cd-nav-trigger::after {
+  /* 2 rounded colored backgrounds for the menu icon */
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 50%;
+  height: 100%;
+  width: 100%;
+  /* Force Hardware Acceleration in WebKit */
+  -webkit-transform: translateZ(0);
+  -moz-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  -o-transform: translateZ(0);
+  transform: translateZ(0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-transition-property: -webkit-transform;
+  -moz-transition-property: -moz-transform;
+  transition-property: transform;
+}
+.cd-nav-trigger::before {
+  background-color: black;
+  -webkit-transform: scale(1);
+  -moz-transform: scale(1);
+  -ms-transform: scale(1);
+  -o-transform: scale(1);
+  transform: scale(1);
+  -webkit-transition-duration: 0.3s;
+  -moz-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-delay: 0.4s;
+  -moz-transition-delay: 0.4s;
+  transition-delay: 0.4s;
+}
+.cd-nav-trigger::after {
+  background-color: white;
+  -webkit-transform: scale(0);
+  -moz-transform: scale(0);
+  -ms-transform: scale(0);
+  -o-transform: scale(0);
+  transform: scale(0);
+  -webkit-transition-duration: 0s;
+  -moz-transition-duration: 0s;
+  transition-duration: 0s;
+  -webkit-transition-delay: 0s;
+  -moz-transition-delay: 0s;
+  transition-delay: 0s;
+}
+.cd-nav-trigger.close-nav::before {
+  /* user clicks on the .cd-nav-trigger element - 1st rounded background disappears */
+  -webkit-transform: scale(0);
+  -moz-transform: scale(0);
+  -ms-transform: scale(0);
+  -o-transform: scale(0);
+  transform: scale(0);
+}
+.cd-nav-trigger.close-nav::after {
+  /* user clicks on the .cd-nav-trigger element - 2nd rounded background appears */
+  -webkit-transform: scale(1);
+  -moz-transform: scale(1);
+  -ms-transform: scale(1);
+  -o-transform: scale(1);
+  transform: scale(1);
+  -webkit-transition-duration: 0.3s;
+  -moz-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-delay: 0.4s;
+  -moz-transition-delay: 0.4s;
+  transition-delay: 0.4s;
+}
+.cd-nav-trigger.close-nav .cd-icon {
+  /* user clicks on the .cd-nav-trigger element - transform the icon */
+  background-color: rgba(255, 255, 255, 0);
+}
+.cd-nav-trigger.close-nav .cd-icon::before, .cd-nav-trigger.close-nav .cd-icon::after {
+  background-color: black;
+}
+.cd-nav-trigger.close-nav .cd-icon::before {
+  -webkit-transform: translateY(0) rotate(45deg);
+  -moz-transform: translateY(0) rotate(45deg);
+  -ms-transform: translateY(0) rotate(45deg);
+  -o-transform: translateY(0) rotate(45deg);
+  transform: translateY(0) rotate(45deg);
+}
+.cd-nav-trigger.close-nav .cd-icon::after {
+  -webkit-transform: translateY(0) rotate(-45deg);
+  -moz-transform: translateY(0) rotate(-45deg);
+  -ms-transform: translateY(0) rotate(-45deg);
+  -o-transform: translateY(0) rotate(-45deg);
+  transform: translateY(0) rotate(-45deg);
+}
+
+.cd-primary-nav {
+  /* by default it's hidden */
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  padding: 80px 5%;
+  z-index: 3;
+  background-color: black;
+  overflow: auto;
+  /* this fixes the buggy scrolling on webkit browsers - mobile devices only - when overflow property is applied */
+  -webkit-overflow-scrolling: touch;
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: visibility 0s, opacity 0.3s;
+  -moz-transition: visibility 0s, opacity 0.3s;
+  transition: visibility 0s, opacity 0.3s;
+}
+.cd-primary-nav li {
+  margin: 2em 0;
+  text-align: center;
+  text-transform: uppercase;
+}
+.cd-primary-nav a {
+  font-size: 20px;
+  font-size: 2rem;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-transition: color 0.2s;
+  -moz-transition: color 0.2s;
+  transition: color 0.2s;
+}
+.no-touch .cd-primary-nav a:hover {
+  color: white;
+}
+.cd-primary-nav.fade-in {
+  /* navigation visible at the end of the circle animation */
+  visibility: visible;
+  opacity: 1;
+}
+
+@media only screen and (min-width: 768px) {
+  .cd-primary-nav li {
+    margin: 2em 0;
+  }
+  .cd-primary-nav a {
+    font-size: 28px;
+    font-size: 4rem;
+  }
+}
+@media only screen and (min-width: 736px) {
+  .cd-primary-nav a {
+    font-size: 3rem;
+  }
+}
+@media only screen and (max-width: 736px) {
+  .cd-primary-nav a {
+    font-size: 2.5rem;
+  }
+}
+
+.cd-overlay-nav, .cd-overlay-content {
+  /* containers of the 2 main rounded backgrounds - these containers are used to position the rounded bgs behind the menu icon */
+  position: fixed;
+  top: 18px;
+  right: 5%;
+  height: 4px;
+  width: 4px;
+  -webkit-transform: translateX(-20px) translateY(20px);
+  -moz-transform: translateX(-20px) translateY(20px);
+  -ms-transform: translateX(-20px) translateY(20px);
+  -o-transform: translateX(-20px) translateY(20px);
+  transform: translateX(-20px) translateY(20px);
+}
+.cd-overlay-nav span, .cd-overlay-content span {
+  display: inline-block;
+  position: absolute;
+  border-radius: 50%;
+  /* Force Hardware Acceleration in WebKit */
+  -webkit-transform: translateZ(0);
+  -moz-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  -o-transform: translateZ(0);
+  transform: translateZ(0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  will-change: transform;
+  -webkit-transform-origin: 50% 50%;
+  -moz-transform-origin: 50% 50%;
+  -ms-transform-origin: 50% 50%;
+  -o-transform-origin: 50% 50%;
+  transform-origin: 50% 50%;
+  -webkit-transform: scale(0);
+  -moz-transform: scale(0);
+  -ms-transform: scale(0);
+  -o-transform: scale(0);
+  transform: scale(0);
+}
+.cd-overlay-nav.is-hidden, .cd-overlay-content.is-hidden {
+  /* background fades out at the end of the animation */
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: opacity .3s 0s, visibility 0s .3s;
+  -moz-transition: opacity .3s 0s, visibility 0s .3s;
+  transition: opacity .3s 0s, visibility 0s .3s;
+}
+
+.cd-overlay-nav {
+  /* main rounded colored bg 1 */
+  z-index: 2;
+}
+.cd-overlay-nav span {
+  background-color: black;
+}
+
+.cd-overlay-content {
+  /* main rounded colored bg 2 */
+  z-index: 4;
+}
+.cd-overlay-content span {
+  background-color: white;
+}
+
+/*current link colors -----------change colors eventually!*/
+
 /*----------------------------------CREATING CONTENT----------------------------------*/
 .creating-title {
   font: 100 3.5em 'lato', helvetica, serif;
@@ -186,7 +517,10 @@ header ul.rowTwo {
 .creation-video {
   margin: 0 auto;
 }
+
 .creation-video iframe {
+  box-sizing: content-box;
+  content: normal;
   width: 700px;
   height: 400px;
   padding: 6% 0%;
@@ -505,11 +839,13 @@ header ul.rowTwo {
 }
 .rave-m-icons {
   clear: left;
-  overflow:hidden;
+  overflow: hidden;
   width: 100%;
   padding: 2% 0;
 }
 .rave-m-icons img {
+  box-sizing: content-box;
+  content: normal;
   float: none;
   margin: auto;
   width: 5%;
@@ -680,6 +1016,8 @@ header ul.rowTwo {
 }
 
 .album-m-icons img {
+    box-sizing: content-box;
+    content: normal;
     display: inline-block;
     float: none;
     margin: auto;
@@ -728,10 +1066,6 @@ header ul.rowTwo {
     margin: 3% auto;
   }
 												/*Header/Nav*/
-	header{
-		height: 65px;
-		margin-bottom: 1.5%;
-	}
 
 												/*Book List*/
   .creating-title, .reading-title {
@@ -823,28 +1157,8 @@ header ul.rowTwo {
     margin: 4% auto;
   }
 												/*Header/Nav*/
-	header {
-		height: 50px;
-	}
-	header ul.rowOne {
-		display: block;
-		position: absolute;
-		bottom: 25px;
-		right: 0;
-	}
-	header ul.rowTwo {
-		display: block;
-		position: absolute;
-		bottom: 0;
-		right: 10px;
-	}
-	.rowOne li, .rowTwo li {
-	padding-left: 15px;
-	}
-	.rowOne a, .rowTwo a {
-		font: 100 2em 'roboto', helvetica, serif;
-		transition: .1s;
-	}
+
+
 
 												/*Creations*/
   .creation-title {
@@ -927,22 +1241,8 @@ header ul.rowTwo {
     margin: 5% auto;
   }
 											/*Header / Nav*/
-	header {
-		height: auto;
-	}
-	header ul.rowOne {
-		width: 100%;
-		position: static;
-		text-align: center;
-	}
-	header ul.rowTwo {
-		width: 100%;
-		position: static;
-		text-align: center;
-	}
-	.rowOne a, .rowTwo a {
-		text-align: center;
-	}
+
+
 
 											/*Creations*/
   .creation-title {
@@ -1099,6 +1399,8 @@ header ul.rowTwo {
 }
 
 .m-icons-dec-2015 img, .m-icons-nov-2015 img, .m-icons-oct-2015 img {
+  box-sizing: content-box;
+  content: normal;
   float: none;
   margin: auto;
   width: 5%;
@@ -1129,7 +1431,7 @@ header ul.rowTwo {
   background-color: rgba( 213, 230, 240, 1);
 }
 .title-dec-2015, .dec-2015 p {
-  color: rgba(56,31,13,1);;
+  color: rgba(56,31,13,1);
 }
 
 
