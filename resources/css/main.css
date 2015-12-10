@@ -134,18 +134,18 @@ footer {
 	display: inline;
 	font: 100 3em 'roboto', helvetica, serif;
 }
-.big-nav {
+.desktop-nav {
 	display: inline;
 	position: absolute;
 	bottom: 0;
 	right: -35px;
   width: 620px;
 }
-.big-nav li {
+.desktop-nav li {
   display: inline;
   padding-left: 5px;
 }
-.big-nav a {
+.desktop-nav a {
   font: 100 2.5em 'roboto', helvetica, serif;
 }
 
@@ -167,7 +167,7 @@ nav a {
 
 /* --------------------------------
 
-Main components
+Mobile Nav Components
 
 -------------------------------- */
 
@@ -193,7 +193,7 @@ header {
 }
 
 @media screen and (max-width: 920px) {
-  .big-nav {
+  .desktop-nav {
     visibility: hidden;
     width: 2px;
     right: none;
@@ -839,11 +839,13 @@ header {
 }
 .rave-m-icons {
   clear: left;
-  overflow:hidden;
+  overflow: hidden;
   width: 100%;
   padding: 2% 0;
 }
 .rave-m-icons img {
+  box-sizing: content-box;
+  content: normal;
   float: none;
   margin: auto;
   width: 5%;
@@ -1014,6 +1016,8 @@ header {
 }
 
 .album-m-icons img {
+    box-sizing: content-box;
+    content: normal;
     display: inline-block;
     float: none;
     margin: auto;
@@ -1395,6 +1399,8 @@ header {
 }
 
 .m-icons-dec-2015 img, .m-icons-nov-2015 img, .m-icons-oct-2015 img {
+  box-sizing: content-box;
+  content: normal;
   float: none;
   margin: auto;
   width: 5%;
