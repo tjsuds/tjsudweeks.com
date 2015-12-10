@@ -134,9 +134,34 @@ footer {
 	display: inline;
 	font: 100 3em 'roboto', helvetica, serif;
 }
+.big-nav {
+	display: inline;
+	position: absolute;
+	bottom: 0;
+	right: -35px;
+  width: 620px;
+}
+.big-nav li {
+  display: inline;
+  padding-left: 5px;
+}
+.big-nav a {
+  font: 100 2.5em 'roboto', helvetica, serif;
+}
+
+#current-c, #hover-c a:hover, #current-w, #current-le, #current-p {
+	color: rgba(109,203,119,1);
+}
+#current-r, #hover-r a:hover {
+  color: rgba(248,112,96,1);
+}
+#current-li, #hover-li a:hover {
+  color: rgba(148,169,187,1);
+}
+
 nav a {
   font: 100 5em 'roboto', helvetica, serif;
-  color: #1e6074;
+  color: white;
   text-decoration: none;
 }
 
@@ -156,7 +181,7 @@ header {
 }
 
 .cd-nav-trigger {
-  top: 2%;
+  top: -10%;
   right: 5%;
   height: 45px;
   width: 45px;
@@ -167,12 +192,29 @@ header {
   white-space: nowrap;
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (max-width: 920px) {
+  .big-nav {
+    visibility: hidden;
+    width: 2px;
+    right: none;
+    left: -300px;
+  }
   .cd-nav-trigger {
-    top: 3%;
+    top: 2.25%;
   }
 }
-
+@media screen and (max-width: 768px) {
+  .cd-nav-trigger {
+    top: 2%;
+  }
+}
+@media only screen
+  and (max-width: 736px)
+  and (orientation: landscape) {
+  .cd-nav-trigger {
+    top: 4%;
+  }
+}
 .cd-nav-trigger .cd-icon {
   /* icon created in CSS */
   position: absolute;
@@ -338,7 +380,7 @@ header {
   transition: visibility 0s, opacity 0.3s;
 }
 .cd-primary-nav li {
-  margin: 1.6em 0;
+  margin: 2em 0;
   text-align: center;
   text-transform: uppercase;
 }
@@ -366,16 +408,17 @@ header {
   }
   .cd-primary-nav a {
     font-size: 28px;
-    font-size: 2.5rem;
+    font-size: 4rem;
   }
 }
-@media only screen and (min-width: 1170px) {
-  .cd-primary-nav li {
-    margin: 2.6em 0;
-  }
+@media only screen and (min-width: 736px) {
   .cd-primary-nav a {
-    font-size: 32px;
     font-size: 3rem;
+  }
+}
+@media only screen and (max-width: 736px) {
+  .cd-primary-nav a {
+    font-size: 2.5rem;
   }
 }
 
@@ -1019,7 +1062,6 @@ header {
     margin: 3% auto;
   }
 												/*Header/Nav*/
-
 
 												/*Book List*/
   .creating-title, .reading-title {
